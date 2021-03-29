@@ -41,7 +41,7 @@ def remove_stopwords(text):
   filtered_text=' '.join(filtered_tokens) 
   return filtered_text
  
-df = pd.read_csv('https://raw.githubusercontent.com/LavanyaPanja/Sentiment_Analysis_Using_Python/main/news.csv')
+df = pd.read_csv('news.csv')
  
 df.news_headline=df.news_headline.apply(lambda x:x.lower())
 df.news_article=df.news_article.apply(lambda x:x.lower()) 
